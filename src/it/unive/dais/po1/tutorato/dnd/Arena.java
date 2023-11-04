@@ -8,7 +8,7 @@ public class Arena {
     }
 
     public void wizardFight(Wizard a, Wizard b){
-        if (a.level*3 + a.hitPoints > b.level*3 + b.hitPoints){
+        if (a.getLevel()*3 + a.hitPoints > b.getLevel()*3 + b.hitPoints){
             System.out.println("Winner is "+ a.name);
         }else {
             System.out.println("Winner is "+ b.name);
